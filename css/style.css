@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+*{
+    font-family: 'Tajawal', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+.home-section {
+position: relative;
+
+}
+.home-section::after , .about-section::after , .plans-section::after , .teachers-section::after , .contact-section::after{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url(..//Images/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4);
+   z-index: -2;
+  }
+.about-section , .plans-section , .teachers-section , .contact-section{
+position: relative;
+}
+.about-section::after {
+    background-image: url(..//Images/flat-arabic-pattern-background_79603-1826.avif);
+
+}
+.teachers-section::after
+{
+    background-image: url(..//Images/4.jpg);
+}
+
+.plans-section::after
+{
+    background-image: url(..//Images/3.avif);
+
+}
+.contact-section::after
+{
+    background-image: url(..//Images/7.jpg);
+}
+.plans-section .card , .teachers-section .card
+{
+    transition: all 0.5s ease;
+}
+.plans-section .card:hover , .teachers-section .card:hover
+{ 
+    margin-right: 3px;
+    box-shadow: #aa571ced 5px 10px;
+    cursor: pointer;
+}
